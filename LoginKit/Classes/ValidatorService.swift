@@ -11,10 +11,10 @@ import Validator
 
 enum ValidationError: String, Error {
 
-    case invalidName = "Invalid name"
-    case invalidEmail = "Invalid email address"
-    case passwordLength = "Must be at least 8 characters"
-    case passwordNotEqual = "Password does not match"
+    case invalidName = "名前が正しくありません"
+    case invalidEmail = "メールアドレスが正しくありません"
+    case passwordLength = "パスワードは８文字以上にしてください"
+    case passwordNotEqual = "パスワードが一致しません"
 
     var message: String {
         return self.rawValue

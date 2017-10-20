@@ -7,6 +7,8 @@
 
 ## About
 
+Japanese Fork of LoginKit
+
 LoginKit is a quick and easy way to add Facebook and email Login/Signup UI to your app. If you need to quickly prototype an app, create an MVP or finish an app for a hackathon, LoginKit can help you by letting you focus on what makes your app special and leave login/signup to LoginKit. But if what you really want is a really specific and customized login/singup flow you are probably better off creating it on your own.
 
 LoginKit handles Signup & Login, via Facebook & Email. It takes care of the UI, the forms, validation, and Facebook SDK access. All you need to do is start LoginKit, and then make the necessary calls to your own backend API to login or signup.
