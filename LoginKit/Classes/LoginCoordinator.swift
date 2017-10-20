@@ -52,23 +52,23 @@ open class LoginCoordinator: ConfigurationSource {
 
     public var errorTintColor = UIColor(red: 241 / 255, green: 196 / 255 , blue: 15 / 255, alpha: 1)
 
-    public var signupButtonText = "Sign Up"
+    public var signupButtonText = "アカウント作成"
 
-    public var loginButtonText = "Log In"
+    public var loginButtonText = "ログイン"
 
-    public var facebookButtonText = "Enter with Facebook"
+    public var facebookButtonText = "Facebook経由でログイン"
 
-    public var forgotPasswordButtonText = "Forgot Password"
+    public var forgotPasswordButtonText = "パスワードを忘れました?"
 
-    public var recoverPasswordButtonText = "Recover Password"
+    public var recoverPasswordButtonText = "リセット"
 
-    public var emailPlaceholder = "Email"
+    public var emailPlaceholder = "メールアドレス"
 
-    public var passwordPlaceholder = "Password"
+    public var passwordPlaceholder = "パスワード"
 
-    public var repeatPasswordPlaceholder = "Repeat Password"
+    public var repeatPasswordPlaceholder = "パスワード再入力"
 
-    public var namePlaceholder = "Full Name"
+    public var namePlaceholder = "名前"
 
     public var shouldShowForgotPassword = true
 

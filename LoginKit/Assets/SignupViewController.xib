@@ -51,7 +51,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="EMAIL"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="メールアドレス"/>
                                 <userDefinedRuntimeAttribute type="string" keyPath="title" value="Email"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                     <real key="value" value="2"/>
@@ -103,7 +103,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="FULL NAME"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="名前"/>
                                 <userDefinedRuntimeAttribute type="string" keyPath="title" value="Name"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                     <real key="value" value="2"/>
@@ -155,7 +155,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="PASSWORD"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="パスワード"/>
                                 <userDefinedRuntimeAttribute type="string" keyPath="title" value="Password"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                     <real key="value" value="2"/>
@@ -207,7 +207,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="REPEAT PASSWORD"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="REPEAT パスワード"/>
                                 <userDefinedRuntimeAttribute type="string" keyPath="title" value="Password"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                     <real key="value" value="2"/>

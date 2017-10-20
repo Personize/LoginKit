@@ -63,8 +63,8 @@
                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="EMAIL"/>
-                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="EMAIL"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="メールアドレス"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="メールアドレス"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                     <real key="value" value="2"/>
                                 </userDefinedRuntimeAttribute>
@@ -115,8 +115,8 @@
                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="PASSWORD"/>
-                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="PASSWORD"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="パスワード"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="パスワード"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                     <real key="value" value="2"/>
                                 </userDefinedRuntimeAttribute>
