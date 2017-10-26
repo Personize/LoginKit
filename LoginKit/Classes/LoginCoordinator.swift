@@ -177,6 +177,10 @@ open class LoginCoordinator: ConfigurationSource {
         print("Implement this method in your subclass to handle login.")
     }
 
+    open func cancel(email: String, password: String) {
+        print("Implement this method in your subclass to handle login.")
+    }
+
     open func signup(name: String, email: String, password: String) {
         print("Implement this method in your subclass to handle signup.")
     }
@@ -245,6 +249,7 @@ extension LoginCoordinator: InitialViewControllerDelegate {
     }
 
     func didSelectCancel(_ viewController: UIViewController) {
+        cancel(_viewController)
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "tabBarController")
         self.topMostController().present(newViewController, animated: true, completion: nil)
