@@ -127,9 +127,8 @@ class InitialViewController: UIViewController, BackgroundMovable {
         delegate?.didSelectFacebook(self)
     }
 
-    @IBAction func didSelectCancel(_ sender: AnyObject) {
-        navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
+    @IBAction func didSelectCancel(_ sender: UIViewController) {
+        delegate?.didSelectCancel(self)
     }
 
 }
