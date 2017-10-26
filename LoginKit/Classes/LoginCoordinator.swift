@@ -236,8 +236,18 @@ extension LoginCoordinator: InitialViewControllerDelegate {
         }
     }
 
+    func topMostController() -> UIViewController {
+        var topController: UIViewController = UIApplication.shared.keyWindow!.rootViewController!
+        while (topController.presentedViewController != nil) {
+            topController = topController.presentedViewController!
+        }
+        return topController
+    }
+
     func didSelectCancel(_ viewController: UIViewController) {
-        finish()
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "tabBarController")
+        self.topMostController().present(newViewController, animated: true, completion: nil)
     }
 }
 
