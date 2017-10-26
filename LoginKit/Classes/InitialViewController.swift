@@ -16,6 +16,8 @@ protocol InitialViewControllerDelegate: class {
 
     func didSelectFacebook(_ viewController: UIViewController)
 
+    func didSelectCancel(_ viewController: UIViewController)
+
 }
 
 class InitialViewController: UIViewController, BackgroundMovable {
@@ -123,6 +125,11 @@ class InitialViewController: UIViewController, BackgroundMovable {
 
     @IBAction func didSelectFacebook(_ sender: AnyObject) {
         delegate?.didSelectFacebook(self)
+    }
+
+    @IBAction func didSelectCancel(_ sender: AnyObject) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
 
 }

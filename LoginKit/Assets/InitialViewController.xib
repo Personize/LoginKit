@@ -54,6 +54,25 @@
                         <action selector="didSelectFacebook:" destination="-1" eventType="touchUpInside" id="TqY-aa-Jaj"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-Cb-f1z">
+                    <rect key="frame" x="40" y="567" width="295" height="50"/>
+                    <color key="backgroundColor" red="0.34901960784313724" green="0.45882352941176469" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Uld-u5-FHz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="戻る">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didSelectCancel:" destination="-1" eventType="touchUpInside" id="TqY-aa-Jaz"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-q7-7Ju" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
                     <rect key="frame" x="40" y="487" width="142" height="50"/>
                     <constraints>

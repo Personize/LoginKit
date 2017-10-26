@@ -37,15 +37,15 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
         errorTintColor = UIColor(red: 253.0/255.0, green: 227.0/255.0, blue: 167.0/255.0, alpha: 1)
 
         // Change placeholder & button texts, useful for different marketing style or language.
-        loginButtonText = "Sign In"
-        signupButtonText = "Create Account"
-        facebookButtonText = "Login with Facebook"
-        forgotPasswordButtonText = "Forgot password?"
-        recoverPasswordButtonText = "Recover"
-        namePlaceholder = "Name"
-        emailPlaceholder = "E-Mail"
-        passwordPlaceholder = "Password!"
-        repeatPasswordPlaceholder = "Confirm password!"
+        loginButtonText = "登録"
+        signupButtonText = "アカウント作成"
+        facebookButtonText = "Facebook経由でログイン"
+        forgotPasswordButtonText = "パスワードを忘れました?"
+        recoverPasswordButtonText = "送信"
+        namePlaceholder = "名前"
+        emailPlaceholder = "メールアドレス"
+        passwordPlaceholder = "パスワード"
+        repeatPasswordPlaceholder = "パスワード確認"
     }
 
     // MARK: - Completion Callbacks
