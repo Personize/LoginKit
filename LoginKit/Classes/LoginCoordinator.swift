@@ -236,6 +236,9 @@ extension LoginCoordinator: InitialViewControllerDelegate {
         }
     }
 
+    func didSelectCancel(_ viewController: UIViewController) {
+        pop()
+    }
 }
 
 extension LoginCoordinator: LoginViewControllerDelegate {
