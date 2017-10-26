@@ -177,8 +177,8 @@ open class LoginCoordinator: ConfigurationSource {
         print("Implement this method in your subclass to handle login.")
     }
 
-    open func cancel(email: String, password: String) {
-        print("Implement this method in your subclass to handle login.")
+    open func cancel(_ view: UIViewController) {
+        print("Implement this method in your subclass to handle cancel.")
     }
 
     open func signup(name: String, email: String, password: String) {
@@ -240,19 +240,8 @@ extension LoginCoordinator: InitialViewControllerDelegate {
         }
     }
 
-    func topMostController() -> UIViewController {
-        var topController: UIViewController = UIApplication.shared.keyWindow!.rootViewController!
-        while (topController.presentedViewController != nil) {
-            topController = topController.presentedViewController!
-        }
-        return topController
-    }
-
     func didSelectCancel(_ viewController: UIViewController) {
-        cancel(_viewController)
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "tabBarController")
-        self.topMostController().present(newViewController, animated: true, completion: nil)
+        cancel(viewController)
     }
 }
 
