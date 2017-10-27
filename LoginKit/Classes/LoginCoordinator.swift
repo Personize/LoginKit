@@ -189,6 +189,14 @@ open class LoginCoordinator: ConfigurationSource {
         print("Implement this method in your subclass to handle facebook.")
     }
 
+    open func enterWithInstagram(profile: InstagramProfile) {
+        print("Implement this method in your subclass to handle Instagram.")
+    }
+
+    open func enterWithTwitter(profile: TwitterProfile) {
+        print("Implement this method in your subclass to handle Twitter.")
+    }
+
     open func recoverPassword(email: String) {
         print("Implement this method in your subclass to handle password recovery.")
     }
@@ -238,6 +246,14 @@ extension LoginCoordinator: InitialViewControllerDelegate {
                 break
             }
         }
+    }
+
+    func didSelectInstagram(_ viewController: UIViewController) {
+        self.enterWithInstagram()
+    }
+
+    func didSelectTwitter(_ viewController: UIViewController) {
+        self.enterWithTwitter()
     }
 
     func didSelectCancel(_ viewController: UIViewController) {

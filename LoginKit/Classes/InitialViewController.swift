@@ -16,6 +16,10 @@ protocol InitialViewControllerDelegate: class {
 
     func didSelectFacebook(_ viewController: UIViewController)
 
+    func didSelectTwitter(_ viewController: UIViewController)
+
+    func didSelectInstagram(_ viewController: UIViewController)
+
     func didSelectCancel(_ viewController: UIViewController)
 
 }
@@ -125,6 +129,14 @@ class InitialViewController: UIViewController, BackgroundMovable {
 
     @IBAction func didSelectFacebook(_ sender: AnyObject) {
         delegate?.didSelectFacebook(self)
+    }
+
+    @IBAction func didSelectTwitter(_ sender: AnyObject) {
+        delegate?.didSelectTwitter(self)
+    }
+
+    @IBAction func didSelectInstagram(_ sender: AnyObject) {
+        delegate?.didSelectInstagram(self)
     }
 
     @IBAction func didSelectCancel(_ sender: UIViewController) {

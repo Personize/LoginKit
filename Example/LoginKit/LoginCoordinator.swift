@@ -66,6 +66,18 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
     }
 
+    override func enterWithTwitter(profile: TwitterProfile) {
+        // Handle Facebook login/signup via your API
+        print("Login/Signup via Twitter with: Twitter profile =\(profile)")
+
+    }
+
+    override func enterWithInstagram(profile: InstagramkProfile) {
+        // Handle Facebook login/signup via your API
+        print("Login/Signup via Instagram with: Instagram profile =\(profile)")
+
+    }
+
     override func recoverPassword(email: String) {
         // Handle password recovery via your API
         print("Recover password with: email =\(email)")
