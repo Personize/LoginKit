@@ -14,6 +14,8 @@
             <connections>
                 <outlet property="backgroundImageView" destination="Vw0-kY-ntJ" id="DyE-sX-tL3"/>
                 <outlet property="facebookButton" destination="XPy-Cb-f1M" id="TYL-7o-sMQ"/>
+                <outlet property="instagramButton" destination="oJF-4q-EQD" id="TYL-7o-sMy"/>
+                <outlet property="twitterButton" destination="MMd-2E-k10" id="TYL-7o-sMz"/>
                 <outlet property="loginButton" destination="B7r-wF-hG2" id="gSl-LL-Kj1"/>
                 <outlet property="logoImageView" destination="wTd-tf-f9d" id="Bwx-F5-wtj"/>
                 <outlet property="signupButton" destination="9Xa-q7-7Ju" id="kmm-zj-21i"/>

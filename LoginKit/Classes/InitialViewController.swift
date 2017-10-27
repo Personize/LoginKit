@@ -51,6 +51,8 @@ class InitialViewController: UIViewController, BackgroundMovable {
     @IBOutlet weak var loginButton: Buttn!
 
     @IBOutlet weak var facebookButton: UIButton!
+    @IBOutlet weak var twitterButton: UIButton!
+    @IBOutlet weak var instagramButton: UIButton!
 
     // MARK: - UIViewController
 
@@ -108,6 +110,8 @@ class InitialViewController: UIViewController, BackgroundMovable {
         loginButton.titleLabel?.font = Font.montserratRegular.get(size: 13)
         signupButton.titleLabel?.font = Font.montserratRegular.get(size: 13)
         facebookButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
+        twitterButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
+        instagramButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
     }
 
     func addShadows() {
@@ -115,6 +119,18 @@ class InitialViewController: UIViewController, BackgroundMovable {
         facebookButton.layer.shadowColor = UIColor(red: 89.0/255.0, green: 117.0/255.0, blue: 177.0/255.0, alpha: 1).cgColor
         facebookButton.layer.shadowOffset = CGSize(width: 15, height: 15)
         facebookButton.layer.shadowRadius = 7
+
+
+        twitterButton.layer.shadowOpacity = 0.3
+        twitterButton.layer.shadowColor = UIColor(red: 89.0/255.0, green: 117.0/255.0, blue: 177.0/255.0, alpha: 1).cgColor
+        twitterButton.layer.shadowOffset = CGSize(width: 15, height: 15)
+        twitterButton.layer.shadowRadius = 7
+
+
+        instagramButton.layer.shadowOpacity = 0.3
+        instagramButton.layer.shadowColor = UIColor(red: 89.0/255.0, green: 117.0/255.0, blue: 177.0/255.0, alpha: 1).cgColor
+        instagramButton.layer.shadowOffset = CGSize(width: 15, height: 15)
+        instagramButton.layer.shadowRadius = 7
     }
 
     // MARK: - Action's
