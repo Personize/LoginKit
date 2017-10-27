@@ -185,7 +185,7 @@ open class LoginCoordinator: ConfigurationSource {
         print("Implement this method in your subclass to handle signup.")
     }
 
-    open func enterWithFacebook(profile: FacebookProfile) {
+    open func enterWithFacebook() {
         print("Implement this method in your subclass to handle facebook.")
     }
 
@@ -238,14 +238,7 @@ extension LoginCoordinator: InitialViewControllerDelegate {
     }
 
     func didSelectFacebook(_ viewController: UIViewController) {
-        facebookService.login(from: viewController) { (result) in
-            switch result {
-            case .success(let profile):
-                self.enterWithFacebook(profile: profile)
-            default:
-                break
-            }
-        }
+        self.enterWithFacebook()
     }
 
     func didSelectInstagram(_ viewController: UIViewController) {

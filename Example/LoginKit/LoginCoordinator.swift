@@ -60,9 +60,9 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
         print("Signup with: name = \(name) email =\(email) password = \(password)")
     }
 
-    override func enterWithFacebook(profile: FacebookProfile) {
+    override func enterWithFacebook() {
         // Handle Facebook login/signup via your API
-        print("Login/Signup via Facebook with: FB profile =\(profile)")
+        print("Login/Signup via Facebook")
 
     }
 
