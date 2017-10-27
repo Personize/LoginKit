@@ -189,11 +189,11 @@ open class LoginCoordinator: ConfigurationSource {
         print("Implement this method in your subclass to handle facebook.")
     }
 
-    open func enterWithInstagram(profile: InstagramProfile) {
+    open func enterWithInstagram() {
         print("Implement this method in your subclass to handle Instagram.")
     }
 
-    open func enterWithTwitter(profile: TwitterProfile) {
+    open func enterWithTwitter() {
         print("Implement this method in your subclass to handle Twitter.")
     }
 

@@ -66,15 +66,15 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
     }
 
-    override func enterWithTwitter(profile: TwitterProfile) {
+    override func enterWithTwitter() {
         // Handle Facebook login/signup via your API
-        print("Login/Signup via Twitter with: Twitter profile =\(profile)")
+        print("Login/Signup via Twitter")
 
     }
 
-    override func enterWithInstagram(profile: InstagramkProfile) {
+    override func enterWithInstagram() {
         // Handle Facebook login/signup via your API
-        print("Login/Signup via Instagram with: Instagram profile =\(profile)")
+        print("Login/Signup via Instagram")
 
     }
 
