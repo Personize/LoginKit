@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController" customModule="ILLoginKit" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundImageView" destination="Vw0-kY-ntJ" id="DyE-sX-tL3"/>
-                <outlet property="facebookButton" destination="XPy-Cb-f1M" id="TYL-7o-sMQ"/>
-                <outlet property="instagramButton" destination="oJF-4q-EQD" id="TYL-7o-sMy"/>
-                <outlet property="twitterButton" destination="MMd-2E-k10" id="TYL-7o-sMz"/>
                 <outlet property="loginButton" destination="B7r-wF-hG2" id="gSl-LL-Kj1"/>
                 <outlet property="logoImageView" destination="wTd-tf-f9d" id="Bwx-F5-wtj"/>
                 <outlet property="signupButton" destination="9Xa-q7-7Ju" id="kmm-zj-21i"/>
@@ -51,27 +47,8 @@
                         <action selector="didSelectCancel:" destination="-1" eventType="touchUpInside" id="DvD-NR-lKz"/>
                     </connections>
                 </button>
-                <!-- <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-Cb-f1M">
-                    <rect key="frame" x="40" y="434" width="295" height="50"/>
-                    <color key="backgroundColor" red="0.34901960784313724" green="0.45882352941176469" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="Uld-u5-FHe"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Enter with Facebook">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="25"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="didSelectFacebook:" destination="-1" eventType="touchUpInside" id="TqY-aa-Jaj"/>
-                    </connections>
-                </button> -->
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-q7-7Ju" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
-                    <rect key="frame" x="40" y="354" width="142" height="50"/>
+                    <rect key="frame" x="85.5" y="400" width="53" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="fc3-ve-5r8"/>
                     </constraints>
@@ -91,8 +68,15 @@
                         <action selector="didSelectSignup:" destination="-1" eventType="touchUpInside" id="qsl-r3-2xg"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-tf-f9d">
+                    <rect key="frame" x="90" y="100" width="195" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="29y-2p-N0Y"/>
+                        <constraint firstAttribute="width" constant="195" id="7g2-1l-TR0"/>
+                    </constraints>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7r-wF-hG2" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
-                    <rect key="frame" x="194" y="354" width="141" height="50"/>
+                    <rect key="frame" x="241" y="400" width="44" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="9F5-ZK-SHS"/>
                     </constraints>
@@ -112,81 +96,37 @@
                         <action selector="didSelectLogin:" destination="-1" eventType="touchUpInside" id="p85-YG-D3j"/>
                     </connections>
                 </button>
-                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NoL-bm-j7W">
-                    <rect key="frame" x="40" y="194" width="195" height="130"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-tf-f9d">
-                            <rect key="frame" x="0.0" y="0.0" width="195" height="130"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="130" id="wgq-UG-1LL"/>
-                            </constraints>
-                        </imageView>
-                    </subviews>
-                </stackView>
-                <!-- <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJF-4q-EQD">
-                    <rect key="frame" x="40" y="603" width="295" height="50"/>
-                    <color key="backgroundColor" red="0.34901960780000002" green="0.45882352939999999" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Instagram経由でログイン">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="25"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="didSelectInstagram:" destination="-1" eventType="touchUpInside" id="1OW-su-PmU"/>
-                    </connections>
-                </button> -->
-                <!-- <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMd-2E-k10">
-                    <rect key="frame" x="40" y="518" width="295" height="50"/>
-                    <color key="backgroundColor" red="0.34901960780000002" green="0.45882352939999999" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGb-9l-CSg">
+                    <rect key="frame" x="149" y="624" width="77" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="Nsh-yL-4xh"/>
+                        <constraint firstAttribute="height" constant="30" id="Ydd-XT-hOA"/>
+                        <constraint firstAttribute="width" constant="77" id="wie-Ob-hVe"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Twitter経由でログイン">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="25"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
+                    <state key="normal" title="登録しない"/>
                     <connections>
-                        <action selector="didSelectTwitter:" destination="-1" eventType="touchUpInside" id="Q1P-fy-Nsz"/>
+                        <action selector="disSelectDismiss:" destination="-1" eventType="touchUpInside" id="3j3-oM-vBK"/>
                     </connections>
-                </button> -->
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="oJF-4q-EQD" firstAttribute="top" secondItem="MMd-2E-k10" secondAttribute="bottom" constant="35" id="1a8-ke-PSa"/>
-                <constraint firstItem="oJF-4q-EQD" firstAttribute="trailing" secondItem="MMd-2E-k10" secondAttribute="trailing" id="2Zs-0d-NDR"/>
-                <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="3Gm-Ia-4ad"/>
-                <constraint firstAttribute="bottom" secondItem="XPy-Cb-f1M" secondAttribute="bottom" constant="183" id="Cvk-vi-HpV"/>
-                <constraint firstItem="MMd-2E-k10" firstAttribute="trailing" secondItem="XPy-Cb-f1M" secondAttribute="trailing" id="DiZ-SH-lPC"/>
-                <constraint firstAttribute="trailing" secondItem="XPy-Cb-f1M" secondAttribute="trailing" constant="40" id="EVX-g1-T0C"/>
-                <constraint firstItem="MMd-2E-k10" firstAttribute="top" secondItem="XPy-Cb-f1M" secondAttribute="bottom" constant="34" id="F5n-mn-e3U"/>
+                <constraint firstItem="EGb-9l-CSg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0pd-o4-ZzX"/>
+                <constraint firstItem="9Xa-q7-7Ju" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-75.5" id="3hh-1g-cF5"/>
                 <constraint firstAttribute="trailing" secondItem="Vw0-kY-ntJ" secondAttribute="trailing" constant="-20" id="G08-uT-z48"/>
-                <constraint firstItem="9Xa-q7-7Ju" firstAttribute="width" secondItem="XPy-Cb-f1M" secondAttribute="width" multiplier="0.48" id="Mba-Om-itj"/>
-                <constraint firstItem="oJF-4q-EQD" firstAttribute="leading" secondItem="MMd-2E-k10" secondAttribute="leading" id="OBF-dZ-XEy"/>
                 <constraint firstAttribute="bottom" secondItem="Vw0-kY-ntJ" secondAttribute="bottom" constant="-20" id="PYR-Bs-drb"/>
-                <constraint firstItem="MMd-2E-k10" firstAttribute="leading" secondItem="NoL-bm-j7W" secondAttribute="leading" id="RGm-fX-BhU"/>
+                <constraint firstItem="wTd-tf-f9d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="RvV-ST-uvV"/>
+                <constraint firstItem="B7r-wF-hG2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="75.5" id="VUr-3x-d93"/>
+                <constraint firstItem="9Xa-q7-7Ju" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="400" id="WT0-uD-qdu"/>
+                <constraint firstItem="wTd-tf-f9d" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WWN-jO-dWw"/>
                 <constraint firstItem="Vw0-kY-ntJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="XPO-54-lKF"/>
-                <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="9Xa-q7-7Ju" secondAttribute="bottom" constant="30" id="ZLL-6L-oTT"/>
-                <constraint firstItem="B7r-wF-hG2" firstAttribute="trailing" secondItem="XPy-Cb-f1M" secondAttribute="trailing" id="bkh-nJ-31Q"/>
-                <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="B7r-wF-hG2" secondAttribute="bottom" constant="30" id="dH5-Hs-8bs"/>
-                <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="9Xa-q7-7Ju" secondAttribute="leading" id="enB-lh-Yf4"/>
-                <constraint firstItem="B7r-wF-hG2" firstAttribute="width" secondItem="XPy-Cb-f1M" secondAttribute="width" multiplier="0.48" id="pmQ-Jq-bBx"/>
-                <constraint firstItem="MMd-2E-k10" firstAttribute="leading" secondItem="XPy-Cb-f1M" secondAttribute="leading" id="tec-ax-YUO"/>
+                <constraint firstItem="B7r-wF-hG2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="400" id="Xay-eL-i8R"/>
+                <constraint firstAttribute="bottom" secondItem="EGb-9l-CSg" secondAttribute="bottom" constant="13" id="bcp-11-8sW"/>
                 <constraint firstItem="Vw0-kY-ntJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="zj1-IP-NWo"/>
-                <constraint firstAttribute="bottom" secondItem="oJF-4q-EQD" secondAttribute="bottom" constant="14" id="zvL-kG-Unc"/>
             </constraints>
             <point key="canvasLocation" x="-7.5" y="-539.5"/>
         </view>
     </objects>
     <resources>
-        <image name="backIcon" width="10" height="17"/>
+        <image name="backIcon" width="18" height="23"/>
     </resources>
 </document>

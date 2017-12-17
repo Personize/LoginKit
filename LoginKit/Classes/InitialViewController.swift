@@ -159,6 +159,10 @@ class InitialViewController: UIViewController, BackgroundMovable {
         delegate?.didSelectCancel(self)
     }
 
+    @IBAction func didSelectDismiss(_ sender: UIViewController) {
+        delegate?.didSelectCancel(self)
+    }
+
 }
 
 // MARK: - UINavigationController Delegate
