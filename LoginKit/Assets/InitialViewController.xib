@@ -51,7 +51,7 @@
                         <action selector="didSelectCancel:" destination="-1" eventType="touchUpInside" id="DvD-NR-lKz"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-Cb-f1M">
+                <!-- <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-Cb-f1M">
                     <rect key="frame" x="40" y="434" width="295" height="50"/>
                     <color key="backgroundColor" red="0.34901960784313724" green="0.45882352941176469" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -69,7 +69,7 @@
                     <connections>
                         <action selector="didSelectFacebook:" destination="-1" eventType="touchUpInside" id="TqY-aa-Jaj"/>
                     </connections>
-                </button>
+                </button> -->
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-q7-7Ju" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
                     <rect key="frame" x="40" y="354" width="142" height="50"/>
                     <constraints>
@@ -123,7 +123,7 @@
                         </imageView>
                     </subviews>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJF-4q-EQD">
+                <!-- <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJF-4q-EQD">
                     <rect key="frame" x="40" y="603" width="295" height="50"/>
                     <color key="backgroundColor" red="0.34901960780000002" green="0.45882352939999999" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -138,8 +138,8 @@
                     <connections>
                         <action selector="didSelectInstagram:" destination="-1" eventType="touchUpInside" id="1OW-su-PmU"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMd-2E-k10">
+                </button> -->
+                <!-- <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMd-2E-k10">
                     <rect key="frame" x="40" y="518" width="295" height="50"/>
                     <color key="backgroundColor" red="0.34901960780000002" green="0.45882352939999999" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -157,7 +157,7 @@
                     <connections>
                         <action selector="didSelectTwitter:" destination="-1" eventType="touchUpInside" id="Q1P-fy-Nsz"/>
                     </connections>
-                </button>
+                </button> -->
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
