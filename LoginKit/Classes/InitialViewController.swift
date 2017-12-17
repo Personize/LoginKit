@@ -81,7 +81,7 @@ class InitialViewController: UIViewController, BackgroundMovable {
     func customizeAppearance() {
         configureFromSource()
         setupFonts()
-        addShadows()
+        // addShadows()
 
         navigationController?.isNavigationBarHidden = true
         navigationController?.delegate = self
@@ -103,15 +103,15 @@ class InitialViewController: UIViewController, BackgroundMovable {
         loginButton.setTitleColor(config.tintColor, for: .normal)
         loginButton.borderColor = config.tintColor.withAlphaComponent(0.25)
         
-        facebookButton.setTitle(config.facebookButtonText, for: .normal)
+        // facebookButton.setTitle(config.facebookButtonText, for: .normal)
     }
 
     func setupFonts() {
         loginButton.titleLabel?.font = Font.montserratRegular.get(size: 13)
         signupButton.titleLabel?.font = Font.montserratRegular.get(size: 13)
-        facebookButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
-        twitterButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
-        instagramButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
+        // facebookButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
+        // twitterButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
+        // instagramButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
     }
 
     func addShadows() {
